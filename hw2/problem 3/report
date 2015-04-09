@@ -1,0 +1,44 @@
+(1) lan1.hmm test1.seq
+------------------------------------
+Viterbi using direct probabilities
+Viterbi  MLE log prob = -1.407294E+01
+------------------------------------
+Viterbi using log probabilities
+Viterbi  MLE log prob = -1.407294E+01
+------------------------------------
+
+
+(2)lan2.hmm test1.seq
+------------------------------------
+Viterbi using direct probabilities
+Viterbi  MLE log prob = -2.078765E+01
+------------------------------------
+Viterbi using log probabilities
+Viterbi  MLE log prob = -2.078765E+01
+------------------------------------
+
+
+(3)lan1.hmm test2.seq
+------------------------------------
+Viterbi using direct probabilities
+Viterbi  MLE log prob = -2.097969E+01
+------------------------------------
+Viterbi using log probabilities
+Viterbi  MLE log prob = -2.097969E+01
+------------------------------------
+
+
+(4)lan2.hmm test2.seq
+------------------------------------
+Viterbi using direct probabilities
+Viterbi  MLE log prob = -1.449021E+01
+------------------------------------
+Viterbi using log probabilities
+Viterbi  MLE log prob = -1.449021E+01
+------------------------------------
+
+
+For "c i n", the first language model has larger log likelyhood;
+for "n i c", the second language model have larger log likely hood.
+It makes sense because in the first traning set,  subsequence "c i" appears frequently, but "i c" never appears.
+But in the second training set, subsequence "i c" frequently but "c i" never appears.
